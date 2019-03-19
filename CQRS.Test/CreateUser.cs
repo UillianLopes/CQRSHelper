@@ -1,7 +1,7 @@
-﻿using CQRS.Core.Interfaces;
+﻿using CQRSHelper.Core.Interfaces;
 using System;
 
-namespace CQRS.Test
+namespace CQRSHelper.Test
 {
     public class CreateUser : ICommand
     {

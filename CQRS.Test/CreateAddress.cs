@@ -1,6 +1,6 @@
-﻿using CQRS.Core.Interfaces;
+﻿using CQRSHelper.Core.Interfaces;
 
-namespace CQRS.Test
+namespace CQRSHelper.Test
 {
     public class CreateAddress : ICommand
     {

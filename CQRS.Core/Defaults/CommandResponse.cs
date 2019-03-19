@@ -1,6 +1,6 @@
-﻿using CQRS.Core.Interfaces;
+﻿using CQRSHelper.Core.Interfaces;
 
-namespace CQRS.Core.Defaults
+namespace CQRSHelper.Core.Defaults
 {
     public class CommandResponse : ICommandResponse
     {

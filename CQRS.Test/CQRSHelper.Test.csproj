@@ -6,8 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CQRS.Core\CQRS.Core.csproj" />
-    <ProjectReference Include="..\CQRS.Validators\CQRS.Validators.csproj" />
+    <ProjectReference Include="..\CQRS.Core\CQRSHelper.Core.csproj" />
+    <ProjectReference Include="..\CQRS.Validators\CQRSHelper.Validators.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,8 +1,8 @@
-﻿using CQRS.Validators.Interfaces;
+﻿using CQRSHelper.Validators.Interfaces;
 using System;
 using System.Collections.Generic;
 
-namespace CQRS.Validators.Classes
+namespace CQRSHelper.Validators.Classes
 {
     public class ValidationRule<T> : IValidationRule<T>
     {

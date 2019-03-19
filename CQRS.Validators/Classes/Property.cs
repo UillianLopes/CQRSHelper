@@ -1,10 +1,10 @@
-﻿using CQRS.Core.Interfaces;
-using CQRS.Validators.Interfaces;
+﻿using CQRSHelper.Core.Interfaces;
+using CQRSHelper.Validators.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace CQRS.Validators.Classes
+namespace CQRSHelper.Validators.Classes
 {
     public class Property<TType> : IProperty<TType>
     {

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace CQRS.Validators.Interfaces
+namespace CQRSHelper.Validators.Interfaces
 {
     public interface IValidationRule<T>
     {

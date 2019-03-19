@@ -1,8 +1,8 @@
-﻿using CQRS.Core.Interfaces;
-using CQRS.Validators.Interfaces;
+﻿using CQRSHelper.Core.Interfaces;
+using CQRSHelper.Validators.Interfaces;
 using System.Linq;
 
-namespace CQRS.Validators.Extensions
+namespace CQRSHelper.Validators.Extensions
 {
     public static class StringValidatons
     {

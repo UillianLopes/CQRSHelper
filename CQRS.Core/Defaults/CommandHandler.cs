@@ -1,4 +1,4 @@
-﻿namespace CQRS.Core.Defaults
+﻿namespace CQRSHelper.Core.Defaults
 {
     public abstract class CommandHandler
     {

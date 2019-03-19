@@ -1,9 +1,9 @@
-﻿using CQRS.Core.Interfaces;
-using CQRS.Validators.Classes;
+﻿using CQRSHelper.Core.Interfaces;
+using CQRSHelper.Validators.Classes;
 using System;
 using System.Collections.Generic;
 
-namespace CQRS.Validators.Interfaces
+namespace CQRSHelper.Validators.Interfaces
 {
     public interface IProperty
     {

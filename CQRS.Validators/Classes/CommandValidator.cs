@@ -1,11 +1,11 @@
-﻿using CQRS.Core.Interfaces;
-using CQRS.Validators.Interfaces;
+﻿using CQRSHelper.Core.Interfaces;
+using CQRSHelper.Validators.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 
-namespace CQRS.Validators.Classes
+namespace CQRSHelper.Validators.Classes
 {
     public abstract class CommandValidator<TCommand> where TCommand : ICommand
     {

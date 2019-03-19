@@ -1,11 +1,11 @@
-﻿using CQRS.Core.Interfaces;
-using CQRS.Validators.Classes;
+﻿using CQRSHelper.Core.Interfaces;
+using CQRSHelper.Validators.Classes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 
-namespace CQRS.Test
+namespace CQRSHelper.Test
 {
     class Program
     {

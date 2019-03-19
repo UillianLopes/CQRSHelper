@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CQRS.Core", "CQRS.Core\CQRS.Core.csproj", "{1C2B5B4D-54F3-4D69-8512-1171F3C8168E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CQRSHelper.Core", "CQRS.Core\CQRSHelper.Core.csproj", "{1C2B5B4D-54F3-4D69-8512-1171F3C8168E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CQRS.Validators", "CQRS.Validators\CQRS.Validators.csproj", "{DB052B3E-E5EB-45DE-B6D6-431D8EB5EE4C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CQRSHelper.Validators", "CQRS.Validators\CQRSHelper.Validators.csproj", "{DB052B3E-E5EB-45DE-B6D6-431D8EB5EE4C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CQRS.Test", "CQRS.Test\CQRS.Test.csproj", "{C32E6BD6-B6DC-4B80-AFAE-CAB3CB6F632A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CQRSHelper.Test", "CQRS.Test\CQRSHelper.Test.csproj", "{C32E6BD6-B6DC-4B80-AFAE-CAB3CB6F632A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

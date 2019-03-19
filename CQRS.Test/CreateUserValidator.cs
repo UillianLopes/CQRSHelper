@@ -1,7 +1,7 @@
-﻿using CQRS.Validators.Classes;
-using CQRS.Validators.Extensions;
+﻿using CQRSHelper.Validators.Classes;
+using CQRSHelper.Validators.Extensions;
 
-namespace CQRS.Test
+namespace CQRSHelper.Test
 {
     public class CreateUserValidator : CommandValidator<CreateUser>
     {

@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace CQRS.Core.Interfaces
+namespace CQRSHelper.Core.Interfaces
 {
     public interface ICommandHandlerAsync<TCommand, TCommandResponse> where TCommand : ICommand where TCommandResponse : ICommandResponse
     {
