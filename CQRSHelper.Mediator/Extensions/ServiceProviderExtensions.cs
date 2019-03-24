@@ -11,16 +11,19 @@ namespace CQRSHelper.Mediator.Extensions
         public static void AddMediator(this IServiceCollection services, Action<CommandMediatorOptionsBuilder> configureOptions)
         {
             var optionsBuilder = new CommandMediatorOptionsBuilder();
+
             configureOptions(optionsBuilder);
+
             var options = optionsBuilder.Build();
 
-            foreach (var item in options.HandlerTypes)
+            foreach (var handlerType in options.HandlerTypes)
             {
-                foreach (var interfaceItem in item.GetInterfaces())
+                foreach (var interfaceType in handlerType.GetInterfaces())
                 {
-                    services.AddScoped(interfaceItem, item);
+                    services.AddScoped(interfaceType, handlerType);
                 }
             }
+
             services.AddSingleton(options);
             services.AddScoped<ICommandMediator, CommandMediator>();
         }

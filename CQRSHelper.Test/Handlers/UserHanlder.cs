@@ -5,11 +5,11 @@ using System.Threading.Tasks;
 
 namespace CQRSHelper.Test.Handlers
 {
-    public class UserHanlder : CommandHandler, ICommandHandlerAsync<CreateUser, ICommandResponse>
+    public class UserHanlder : CommandHandler, ICommandHandlerAsync<CreateUser>
     {
         public async Task<ICommandResponse> Handle(CreateUser command)
         {
-            return Success(new { Teste = "Deu certo" });
+            return Success("Deu certo!");
         }
     }
 }

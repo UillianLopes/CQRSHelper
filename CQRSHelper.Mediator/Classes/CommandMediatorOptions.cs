@@ -5,8 +5,7 @@ namespace CQRSHelper.Mediator.Classes
 {
     public class CommandMediatorOptions
     {
-        public ICollection<Type> ValidatorsTypes { get; set; }
-        public ICollection<Type> HandlerTypes { get; set; }
-
+        internal ICollection<Type> ValidatorsTypes { get; set; }
+        internal ICollection<Type> HandlerTypes { get; set; }
     }
 }

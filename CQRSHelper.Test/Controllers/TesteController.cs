@@ -10,6 +10,6 @@ namespace CQRSHelper.Test.Controllers
     public class TesteController : ControllerBase
     {
         [HttpPost("[action]")]
-        public async Task<IActionResult> CreateUser([FromServices]ICommandMediator mediator, [FromQuery]CreateUser command) => Ok(await mediator.SendAsync(command));
+        public async Task<IActionResult> CreateUser([FromServices]ICommandMediator mediator, [FromBody]CreateUser command) => Ok(await mediator.SendAsync(command));
     }
 }

@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CQRSHelper.Core", "CQRS.Core\CQRSHelper.Core.csproj", "{1C2B5B4D-54F3-4D69-8512-1171F3C8168E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CQRSHelper.Core", "CQRSHelper.Core\CQRSHelper.Core.csproj", "{1C2B5B4D-54F3-4D69-8512-1171F3C8168E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CQRSHelper.Validators", "CQRS.Validators\CQRSHelper.Validators.csproj", "{DB052B3E-E5EB-45DE-B6D6-431D8EB5EE4C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CQRSHelper.Validators", "CQRSHelper.Validators\CQRSHelper.Validators.csproj", "{DB052B3E-E5EB-45DE-B6D6-431D8EB5EE4C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CQRSHelper.Mediator", "CQRSHelper.Mediator\CQRSHelper.Mediator.csproj", "{97B2C665-AD58-4A58-A657-4F5A3A1A3328}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRSHelper.Test", "CQRSHelper.Test\CQRSHelper.Test.csproj", "{F7399A83-67C7-4600-92AE-47AD6C9F88D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CQRSHelper.Test", "CQRSHelper.Test\CQRSHelper.Test.csproj", "{F7399A83-67C7-4600-92AE-47AD6C9F88D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRSHelper.Linq", "CQRSHelper.Linq\CQRSHelper.Linq.csproj", "{7C91F6B0-0513-4D06-9845-6734C9DFC660}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{F7399A83-67C7-4600-92AE-47AD6C9F88D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7399A83-67C7-4600-92AE-47AD6C9F88D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F7399A83-67C7-4600-92AE-47AD6C9F88D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C91F6B0-0513-4D06-9845-6734C9DFC660}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C91F6B0-0513-4D06-9845-6734C9DFC660}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C91F6B0-0513-4D06-9845-6734C9DFC660}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C91F6B0-0513-4D06-9845-6734C9DFC660}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

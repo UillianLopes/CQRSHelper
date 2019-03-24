@@ -42,10 +42,9 @@ namespace CQRSHelper.Mediator.Classes
                     Success = false
                 };
 
-            return await GetAsyncCommandHandlers<TCommand, ICommandResponse>().Handle(command);
+            return await GetAsyncCommandHandlers<TCommand>().Handle(command);
         }
             
-
         private IEnumerable<string> Validate<TCommand>(TCommand command) where TCommand : ICommand
         {
             if (_options.ValidatorsTypes is ICollection<Type> validatorsTypes)
@@ -55,11 +54,11 @@ namespace CQRSHelper.Mediator.Classes
             return null;
         }
 
-        private ICommandHandlerAsync<TCommand, TCommandResponse> GetAsyncCommandHandlers<TCommand, TCommandResponse>() where TCommand : ICommand where TCommandResponse : ICommandResponse => 
-            _serviceProvider.GetService<ICommandHandlerAsync<TCommand, TCommandResponse>>();
+        private ICommandHandlerAsync<TCommand> GetAsyncCommandHandlers<TCommand>() where TCommand : ICommand => 
+            _serviceProvider.GetService<ICommandHandlerAsync<TCommand>>();
 
-        private ICommandHandler<TCommand, TCommandResponse> GetCommandHandler<TCommand, TCommandResponse>() where TCommand : ICommand where TCommandResponse : ICommandResponse => 
-            _serviceProvider.GetService<ICommandHandler<TCommand, TCommandResponse>>();
+        private ICommandHandler<TCommand> GetCommandHandler<TCommand, TCommandResponse>() where TCommand : ICommand => 
+            _serviceProvider.GetService<ICommandHandler<TCommand>>();
 
     }
 }

@@ -1,6 +1,4 @@
 ﻿using CQRSHelper.Core.Interfaces;
-using CQRSHelper.Validators.Classes;
-using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,8 +31,7 @@ namespace CQRSHelper.Mediator.Classes
 
                 var genericArgumentsInterfaces = genericArguments.SelectMany(x => x.GetInterfaces());
 
-                return (genericArguments.Contains(typeof(ICommandResponse)) && genericArgumentsInterfaces.Contains(typeof(ICommand))) || 
-                    (genericArgumentsInterfaces.Contains(typeof(ICommand)) && genericArgumentsInterfaces.Contains(typeof(ICommandResponse)));
+                return genericArguments.Contains(typeof(ICommand)) || genericArgumentsInterfaces.Contains(typeof(ICommand));
             }
 
             types = types

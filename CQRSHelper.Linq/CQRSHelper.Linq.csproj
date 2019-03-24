@@ -7,20 +7,19 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <OutputPath>D:\Builds\CQRSHelper\Mediator\</OutputPath>
+    <OutputPath>D:\Builds\CQRSHelper\Linq\</OutputPath>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <OutputPath>D:\Builds\CQRSHelper\Mediator\</OutputPath>
+    <OutputPath>D:\Builds\CQRSHelper\Linq\</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.3" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\CQRSHelper.Core\CQRSHelper.Core.csproj" />
-    <ProjectReference Include="..\CQRSHelper.Validators\CQRSHelper.Validators.csproj" />
   </ItemGroup>
 
 </Project>
