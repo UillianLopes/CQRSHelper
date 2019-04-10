@@ -9,6 +9,7 @@ namespace CQRSHelper.Test.Handlers
     {
         public async Task<ICommandResponse> Handle(CreateUser command)
         {
+            await Task.Run(() => { });
             return Success("Deu certo!");
         }
     }
